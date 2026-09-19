@@ -36,7 +36,6 @@ if (typeof totalTasks !== "number" || typeof completedTasks !== "number" || type
         while (remainingTasks > 0) {
             currentDay += 1;
 
-            // Определяем, сколько задач выполним сегодня, используя только базовый if
             let tasksToday = dailyLimit;
             if (remainingTasks < dailyLimit) {
                 tasksToday = remainingTasks;
